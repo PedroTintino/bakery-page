@@ -1,0 +1,180 @@
+@keyframes bg-animate {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section{
+    height: 650px;
+    width: 100vw;
+}
+
+.first-bg{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to left, #D25380, #E08E6D,#F6C391);
+    background-size: 500% 100%;
+    animation: bg-animate 4s infinite alternate;
+}
+
+
+.overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5px;
+}
+
+.navbar{
+    width: 100%;
+    height: 6rem;
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar button{
+    width: 10rem;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    background-color: #D25380;
+    cursor: pointer;
+    border: none;
+    color: aliceblue;
+}
+
+
+.navbar img{
+    padding: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;    
+}
+
+.logo{
+    
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+ .logo img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.logo button{
+    color: white;
+    background-color: #D25380;
+    height: 4rem;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.logo button a{
+    text-decoration: none;
+    color: white;
+ 
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    height: 6rem;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .floating-button img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+h2{
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.intro{
+   display: flex;
+   flex-flow: column;
+}
+
+#getting-start-text{
+    color: black;
+    font-size: 2rem;
+    display: block;
+    padding: 2.5rem;
+}
+
+#getting-start-text h2{
+    text-align: center;
+    padding: 1rem;
+}
+
+#getting-start-text img{
+    
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+#getting-start-text .first-one::first-letter{
+    font-size: 3rem;
+}
+
+
+/* Queries */
+
+@media ( max-width: 520px) {
+    .first-bg{
+        width: 100%;
+        height: 100%;
+    }
+
+    h2{
+        font-size: 4rem;
+   
+   }
+
+   #getting-start-btn{
+    margin-top: 2rem;
+   }
+}
+
